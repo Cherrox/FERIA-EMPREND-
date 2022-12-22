@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mi Página Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2196f3">
+  <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <script src="/service-worker.js"></script>
+    <script src="/static/js/redirectToHome.js"></script>
+
+  
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #3f5d8b;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .page-container {
+         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+}
+
+nav,
+    h1 {
+      font-family: 'Arial', sans-serif;
+      font-size: 32px;
+      color: #00ffff;
+    }
+    
+    .login-button {
+      background-color: #00ffff;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    
+    nav {
+      background-color: #00ffff;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+    }
+    
+    nav .icon {
+      background-image: url('./img/wheel-of-fortune.svg');
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+    }
+    
+    .benefits {
+    grid-column: span 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    justify-items: center;
+    }
+
+    .benefit-box {
+    text-align: center;
+    }
+    
+    .benefit-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .benefit-description {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    button {
+    grid-column: 1;
+    grid-row: 3;
+    margin-right: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <nav class="navbar">
+
+    <a class="nav-link" href="#">Emprendedores</a>
+    <a class="nav-link" href="/templates/index.html" onclick="redirectToHome()"><img src="/static/images/logo.png" alt="Logo"></a>
+    <a class="nav-link" href="#">Sorteos</a>
+  </nav>
+  
+  
+  <h1>Bienvenido a mi Página Web</h1>
+  <p>Este es un ejemplo de cómo integrar código CSS en un archivo HTML.</p>
+  
+  <div class="benefits">
+    <div class="benefit-box">
+      <h2 class="benefit-title">Beneficio 1</h2>
+      <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="benefit-box">
+        <h2 class="benefit-title">Beneficio 2</h2>
+        <p class="benefit-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+
+    <button class="login-button">Registrarse</button>
+    <button class="login-button" onclick="window.location.href = '/templates/login.html'">Iniciar Sesión</button>
+
+
+  </body>
+  </html>
+  

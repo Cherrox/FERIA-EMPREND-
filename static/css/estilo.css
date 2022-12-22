@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    background-color: #44c977;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Ajusta la tipografía y el tamaño del título principal */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 32px;
+    color: #00ffff; /* Usa un color verde aqua para destacar el título */
+  }
+  
+  /* Ajusta el estilo del botón de inicio de sesión */
+  .login-button {
+    background-color: #00ffff; /* Usa el mismo color verde aqua del título */
+    color: white; /* Usa un color blanco para que el texto del botón sea legible */
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  /* Ajusta el estilo de la barra de navegación */
+  nav {
+    background-color: #00ffff; /* Usa el mismo color verde aqua del título y el botón */
+    font-family: 'Arial', sans-serif;
+    display: flex; /* Utiliza flexbox para organizar los elementos de la barra de navegación */
+    justify-content: space-between; /* Alinea los elementos a ambos extremos de la barra */
+  }
+  
+  /* Ajusta el estilo de los enlaces de la barra de navegación */
+  nav a {
+    color: white; /* Usa un color blanco para que los enlaces sean legibles */
+    text-decoration: none; /* Quita el subrayado debajo de los enlaces */
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  /* Ajusta el estilo del icono de la rueda de la fortuna en la barra de navegación */
+  nav .icon {
+    background-image: url('./img/wheel-of-fortune.svg'); /* Usa la imagen de la rueda de la fortuna como icono */
+    background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+    width: 30px;
+    height: 30px;
+    display: inline-block; /* Muestra el icono en línea con los enlaces */
+  }
+  
+  /* Ajusta el estilo de la sección de beneficios */
+  .benefits {
+    display: flex; /* Utiliza flexbox para organizar los elementos de la sección */
+    justify-content: space-between; /* Alinea los elementos a ambos extremos de la sección */
+    font-family: 'Arial', sans-serif;
+    color: #00ffff; /* Usa el mismo color verde aqua del título, el botón y la barra de navegación */
+}
+    /* Ajusta el estilo de las cajas de los beneficios */
+.benefit-box {
+background-color: white; /* Usa un color blanco para destacar el contenido de las cajas */
+border-radius: 5px;
+padding: 20px;
+text-align: center; /* Alinea el contenido de las cajas al centro */
+
+}
+
+/* Ajusta el estilo del título de cada beneficio */
+.benefit-title {
+font-size: 24px;
+margin-bottom: 10px; /* Agrega un margen debajo del título para separarlo del contenido */
+}
+
+/* Ajusta el estilo del contenido de cada beneficio */
+.benefit-description {
+font-size: 16px;
+line-height: 22px; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+}
